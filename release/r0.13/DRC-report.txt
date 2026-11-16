@@ -1,0 +1,66 @@
+** Drc report for dt-wp.kicad_pcb **
+** Created on 2026-11-16T18:47:27 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 12 DRC violations **
+[npth_inside_courtyard]: NPTH inside courtyard
+    Local override; error
+    @(139.7000 mm, 139.0000 mm): NPTH pad of H2
+    @(148.7500 mm, 146.3000 mm): Footprint U2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(131.1700 mm, 157.8000 mm): Reference field of C4
+    @(129.8000 mm, 158.2100 mm): PTH pad 5 [/I2S_SDOUT] of J5
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(131.1700 mm, 151.6000 mm): Reference field of C3
+    @(129.8000 mm, 150.2100 mm): PTH pad 1 [unconnected-(J5-UART_TX-Pad1)] of J5
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(103.8000 mm, 147.3000 mm): Reference field of U1
+    @(105.5000 mm, 146.6480 mm): Reference field of TP1
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(100.2900 mm, 121.7700 mm): Polygon of U3 on B.Silkscreen
+    @(101.5600 mm, 119.2300 mm): Footprint text of U3 (RST)
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(101.5600 mm, 119.2300 mm): Footprint text of U3 (RST)
+    @(104.1000 mm, 120.5000 mm): Segment of U3 on B.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(128.0000 mm, 124.8000 mm): Reference field of J1
+    @(128.6350 mm, 126.8500 mm): Pad 4 [/POE_VB1] of J1 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(128.0000 mm, 124.8000 mm): Reference field of J1
+    @(127.3650 mm, 126.8500 mm): Pad 5 [/POE_VB1] of J1 on B.Cu
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(98.0000 mm, 177.0000 mm): Segment on Edge.Cuts
+    @(92.6700 mm, 102.7200 mm): Segment of U3 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(98.0000 mm, 177.0000 mm): Segment on Edge.Cuts
+    @(99.0200 mm, 112.8800 mm): Segment of U3 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(101.0000 mm, 95.0000 mm): Arc on Edge.Cuts
+    @(99.0200 mm, 120.5000 mm): Segment of U3 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(101.0000 mm, 95.0000 mm): Arc on Edge.Cuts
+    @(133.3100 mm, 92.5600 mm): Segment of U3 on B.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "A404_Carrier")(type "KiCad")(uri "${KIPRJMOD}/A404_Carrier.pretty")(options "")(descr "A404 carrier footprint library")))

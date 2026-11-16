@@ -1,0 +1,13 @@
+(version 1)
+# 802.3 PD isolation: 1500 Vrms between cable-side copper (RJ45 contacts and shield,
+# magnetics cable side, RT9400 inputs, MDI/PoE traces) and GND_ISO-referenced copper.
+# 2.0 mm in-plane clearance on every copper layer. Assumption, not a certified creepage figure.
+(rule "PoE isolation 2mm"
+  (constraint clearance (min 2.0mm))
+  (condition "(A.hasNetclass('CABLE') || A.memberOfFootprint('J1') || (A.memberOfFootprint('T1') && (A.Pad_Number == '12' || A.Pad_Number == '13'))) && !(B.hasNetclass('CABLE') || B.memberOfFootprint('J1') || (B.memberOfFootprint('T1') && (B.Pad_Number == '12' || B.Pad_Number == '13')))"))
+
+(rule "Ethernet pairs"
+  (condition "A.hasNetclass('ETH')")
+  (constraint diff_pair_gap (min 0.18mm) (opt 0.2mm))
+  (constraint diff_pair_uncoupled (max 10mm))
+  (constraint track_width (min 0.18mm) (opt 0.2mm)))
